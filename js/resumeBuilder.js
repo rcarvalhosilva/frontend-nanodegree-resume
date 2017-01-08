@@ -12,7 +12,7 @@ var bio = {
         "github" : "https://github.com/rcarvalhosilva",
         "location" : "Campinas, SP, Brazil"
     },
-    "pictureURL" : "images/fry.jpg",
+    "pictureURL" : "images/me.jpg",
     "welcomeMessage": "Welcome to my awesome resume!",
     "display": function() {
         // name and function
@@ -114,8 +114,7 @@ var projects = {
             "dates": "2016-2017",
             "description": "Um app voltado para a comunidade de voo livre. Onde os pilotos podem ver em tempo real como estão as condições das pistas e conversar com outros pilotos.",
             "images": [
-                "images/197x148.gif",
-                "images/fry.jpg"
+                "images/fly_away-small-2X.jpg"
             ]
         },
         {
@@ -123,8 +122,7 @@ var projects = {
             "dates": "2016",
             "description": "Um app voltado aos amantes de tatuagem. Siga o trabalho de diversos tatuadores em todo o Brasil.",
             "images": [
-                "images/197x148.gif",
-                "images/fry.jpg"
+                "images/inkster_banner-medium-2X.png"
             ]
         },
         {
@@ -132,8 +130,7 @@ var projects = {
             "dates": "2016",
             "description": "Uma ferramenta simples e objetiva para ajudar você a alcançar seus objetivos por meio da Pomodoro Technique®.",
             "images": [
-                "images/197x148.gif",
-                "images/fry.jpg"
+                "images/pomodoro_banner-medium-2X.jpg"
             ]
         }
     ]
@@ -153,10 +150,11 @@ projects.display = function () {
         $(".project-entry:last").append(formattedDescription);
 
         var images = projects.projects[project].images
-        if (images.lenght > 0 ) {
+        if (images.length > 0 ) {
             for (var image in images) {
                 var formattedImage = HTMLprojectImage.replace("%data%", images[image]);
                 $(".project-entry:last").append(formattedImage);
+                $(".project-entry:last").find("img").addClass("project-image");
             }
         }
     }
