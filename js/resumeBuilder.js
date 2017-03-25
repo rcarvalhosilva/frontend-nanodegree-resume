@@ -1,6 +1,6 @@
 var bio = {
     "name" : "Rodrigo Silva",
-    "role" : "iOS and Web Developer",
+    "role" : "iOS and Front-End Web Developer",
     "skills" : [
         "programming", "swift", "objC",
         "iOS", "html", "css", "JS",
@@ -53,7 +53,7 @@ var education = {
             "name": "Universidade Estadual de Campinas",
             "location": "Campinas, SP, Brazil",
             "dates": "2013 - Current",
-            "degree": "BA",
+            "degree": "Bacharelado",
             "majors": ["Computer Science"],
             "url": "http://www.ic.unicamp.br/graduacao/ciencia-da-computacao"
         }
@@ -162,20 +162,7 @@ projects.display = function () {
 
 var work = {
     "jobs": [
-        {
-            "employer": "Globo",
-            "title": "iOS Developer",
-            "location": "Campinas, SP, Brazil",
-            "dates": 2017,
-            "description": "Desenvolvimento de um aplicativo voltado ao público infantil. utilizando Objc-c"
-        },
-        {
-            "employer": "Nextel",
-            "title": "iOS Developer",
-            "location": "Campinas, SP, Brazil",
-            "dates": 2017,
-            "description": "Desenvolvimento de um aplicativo para o serviço Nextel Happy. Desenvolvido em Swift."
-        }
+
     ]
 }
 
